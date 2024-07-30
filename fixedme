@@ -1,33 +1,32 @@
-function highLightFareDetails() {
-
-        var $window = $(window);
-        var $el = $('.fixme');
-        var scrollTop = $window.scrollTop();
-        var gap = $window.height() - $el.height();
-        var visibleFoot = $(document).height() - $window.scrollTop()
-        var scrollBotPos = 750 - visibleFoot
-        if (scrollTop < 150) {
-            $el.removeAttr('style')
-        }
-        else {
-            if (scrollBotPos > gap) {
-                $el.css({
-                    top: "auto",
-                    bottom: scrollBotPos + "px",
-                    position: "fixed"
-                });
-            }
-            else {
-                $el.css({
-                    top: 15 + "px",
-                    bottom: "auto",
-                    position: "fixed"
-                });
-            }
-        }
-    }
-    $(window).scroll(function () {
-        if ($(window).width() > 760) {
-            highLightFareDetails();
-        }
-    });
+   function highLightFareDetailsne() {
+       var $window = $(window);
+       var $el = $('.fixme');
+       var scrollTop = $window.scrollTop();
+       var gap = $window.height() - $el.height();
+       var visibleFoot = $(document).height() - $window.scrollTop()
+       var scrollBotPos = 1130 - visibleFoot
+       if (scrollTop < 230) {
+           $el.removeAttr('style')
+       }
+       else {
+           if (scrollBotPos > gap) {
+               $el.css({
+                   top: "auto",
+                   bottom: scrollBotPos + "px",
+                   position: "fixed"
+               });
+           }
+           else {
+               $el.css({
+                   top: 20 + "px",
+                   bottom: "auto",
+                   position: "fixed"
+               });
+           }
+       }
+   }
+   $(window).scroll(function () {
+       if ($(window).width() > 760) {
+           highLightFareDetailsne();
+       }
+   });
